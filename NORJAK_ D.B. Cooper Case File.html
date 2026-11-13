@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>NORJAK // D.B. Cooper Case File</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Share+Tech+Mono&display=swap">
+<style>
+:root{--bg:#04090b;--pn:#0a1418;--ink:#cfe9e4;--dim:#6f9690;--ac:#ffb000;--c2:#35e0ff;--rd:#ff4a3d;--ln:#17393d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme=light]{--bg:#e7e1d0;--pn:#f5f1e5;--ink:#161c1c;--dim:#56605d;--ac:#a85400;--c2:#06607f;--rd:#b3261e;--ln:#c4bca4}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 'Share Tech Mono',ui-monospace,Menlo,monospace;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.45;background:repeating-linear-gradient(0deg,#0000 0 2px,#0003 3px),radial-gradient(#0000 55%,#0008)}
+h1,h2,h3,.hd{font-family:'Chakra Petch',system-ui,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:.3em 0}
+h1{font-size:clamp(22px,5vw,38px);color:var(--ac)}h3{color:var(--c2);font-size:15px}
+.dim{color:var(--dim);font-size:12px;letter-spacing:.08em}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--ln)}
+.r{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;justify-content:space-between;padding:8px 14px}
+.cl{color:var(--rd);border:1px solid var(--rd);padding:1px 8px;font-size:11px;animation:bl 2s infinite}
+@keyframes bl{50%{opacity:.35}}
+nav{display:flex;overflow-x:auto;padding:0 10px}
+nav button{flex:none;background:none;border:0;border-bottom:2px solid transparent;color:var(--dim);font:inherit;padding:8px 12px;cursor:pointer}
+nav button.on{color:var(--ac);border-color:var(--ac)}
+main{max-width:1100px;margin:0 auto;padding:14px;display:grid;gap:14px}
+main>*{animation:up .5s both}@keyframes up{from{opacity:0;transform:perspective(800px) rotateX(14deg) translateY(12px)}}
+.pn{background:var(--pn);border:1px solid var(--ln);padding:14px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))}
+.b{font:inherit;cursor:pointer;color:var(--ac);background:none;border:1px solid var(--ac);padding:5px 12px}.b:hover,.b.on{background:var(--ac);color:var(--bg)}
+.g{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+.st{display:inline-block;border:3px solid var(--rd);color:var(--rd);transform:rotate(-6deg);padding:0 10px;font:700 18px 'Chakra Petch',sans-serif;letter-spacing:.2em}
+.rx{background:var(--ink);color:transparent;cursor:pointer;transition:.5s;padding:0 3px}.rx.o{background:none;color:var(--ac)}
+.big{font:700 30px 'Chakra Petch',sans-serif;color:var(--ac)}
+.tl{position:relative;padding:0 0 18px 26px;border-left:1px solid var(--ln);cursor:pointer;opacity:.25;transform:perspective(600px) rotateX(35deg);transition:.6s}
+.tl.in{opacity:1;transform:none}.tl i{position:absolute;left:-6px;top:4px;width:11px;height:11px;background:var(--ac);border-radius:50%;box-shadow:0 0 12px var(--ac)}
+.tl p{display:none;margin:4px 0}.tl.o p{display:block}.tl h3{margin:0}
+.mp{perspective:1100px;overflow:hidden;position:relative;border:1px solid var(--ln);background:var(--pn)}
+#mi2{transform:rotateX(var(--t,24deg));transform-origin:50% 100%;transition:transform .4s}
+.sw{position:absolute;inset:-60%;border-radius:50%;pointer-events:none;background:conic-gradient(#0000 0 300deg,color-mix(in srgb,var(--c2) 30%,transparent) 360deg);animation:sp 7s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+svg text{font:10px 'Share Tech Mono',monospace;fill:var(--dim)}
+.pin{cursor:pointer}.pin circle:last-of-type{fill:var(--ac)}.pr{fill:none;stroke:var(--ac);transform-box:fill-box;transform-origin:center;animation:pu 2s infinite}
+@keyframes pu{to{transform:scale(3.2);opacity:0}}
+.ev{perspective:500px;cursor:pointer}.ev>div{padding:12px;text-align:center;border:1px solid var(--ln);background:var(--pn);transform:rotateX(var(--rx,0))rotateY(var(--ry,0));transition:transform .12s,border-color .2s}
+.ev:hover>div{border-color:var(--ac)}.ev svg{color:var(--c2);filter:drop-shadow(0 0 6px var(--c2))}
+#m{position:fixed;inset:0;z-index:80;background:#000b;display:none;place-items:center;padding:14px}#m.on{display:grid}
+.mb{max-width:640px;width:100%;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));position:relative;max-height:90vh;overflow:auto}
+.sp{display:grid;place-items:center;perspective:500px}.sp svg{color:var(--ac);animation:ry 7s linear infinite;filter:drop-shadow(0 0 10px var(--ac))}
+@keyframes ry{to{transform:rotateY(360deg)}}
+.x{position:absolute;right:10px;top:8px;font:inherit;background:none;border:0;color:var(--dim);cursor:pointer}
+.bar{height:8px;background:var(--ln);margin:4px 0 10px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--c2),var(--ac));animation:gr 1.4s}@keyframes gr{from{width:0}}
+canvas{display:block;width:100%}#cv{touch-action:none;cursor:grab;aspect-ratio:16/10;background:linear-gradient(var(--ln) 1px,#0000 1px) 0 0/28px 28px,linear-gradient(90deg,var(--ln) 1px,#0000 1px) 0 0/28px 28px}
+.chip{font-size:11px;padding:0 6px;border:1px solid;margin-right:6px}.OPEN,.ACTIVE{color:var(--ac)}.CLEARED,.DEAD{color:var(--rd)}.UNLIKELY,.COLD{color:var(--dim)}
+#boot{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-content:center;justify-items:center;gap:14px;padding:20px;transition:opacity .8s,visibility .8s}#boot.off{opacity:0;visibility:hidden}
+.seal{width:120px;height:120px;border:2px solid var(--ac);border-radius:50%;display:grid;place-items:center;color:var(--ac);font:700 15px 'Chakra Petch',sans-serif;box-shadow:0 0 30px var(--ac),inset 0 0 30px var(--ac);animation:ry 6s linear infinite}
+#bt{margin:0;color:var(--c2);min-height:150px;font:inherit;white-space:pre-wrap}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head><body>
+<div id="boot"><div class="seal">NORJAK</div><pre id="bt"></pre><button class="b" id="en" hidden>Authenticate</button></div>
+<header><div class="r"><span class="hd"><b style="color:var(--ac)">NORJAK</b> / Northwest Orient 305</span><span class="cl">TOP SECRET // EYES ONLY</span><span class="dim">T+ <b id="ck"></b> <button class="b" id="tm" title="Theme">◐</button></span></div><nav id="nav"></nav></header>
+<main id="v"></main><div id="m"></div>
+<script>
+const $=(s,e=document)=>e.querySelector(s),$$=(s,e=document)=>[...e.querySelectorAll(s)],R=document.documentElement;
+if(matchMedia('(prefers-color-scheme: light)').matches)R.dataset.theme='light';
+$('#tm').onclick=()=>R.dataset.theme=R.dataset.theme=='light'?'dark':'light';
+const IC={tie:'<path d="M42 6h16l-5 16 9 56-12 14-12-14 9-56z"/><rect x="36" y="26" width="28" height="5"/>',butt:'<rect x="8" y="42" width="64" height="16"/><path d="M26 42v16M78 36q9 14 0 28M86 30q9 20 0 40"/>',cash:'<rect x="8" y="24" width="84" height="52"/><circle cx="50" cy="50" r="14"/><path d="M18 34h8M74 66h8"/><text x="50" y="55" font-size="15" text-anchor="middle" fill="currentColor" stroke="none">20</text>',chute:'<path d="M8 46a42 36 0 0 1 84 0q-21-10-42 0-21-10-42 0zM8 46l42 44M50 46v44M92 46L50 90"/>',plate:'<rect x="14" y="20" width="72" height="60"/><path d="M26 36h48M26 48h36M26 60h44M70 70l6-8 6 8"/>',print:'<path d="M28 84q-8-42 22-48t24 48M38 84q-6-30 12-36t14 36M48 82q0-20 3-24t5 24M20 60q4-34 30-38"/>',case:'<rect x="12" y="34" width="76" height="50"/><path d="M38 34v-10h24v10M12 54h76"/><text x="50" y="76" font-size="18" text-anchor="middle" fill="currentColor" stroke="none">?</text>'};
+const ico=(k,s=100)=>`<svg viewBox="0 0 100 100" width="${s}" height="${s}" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round">${IC[k]}</svg>`;
+const EV=[
+['tie','Clip-on tie','RECOVERED 1971','Black clip-on with a mother-of-pearl tie clip, left on seat 18-C. Citizen sleuths later reported titanium and rare-earth particles on it, pointing toward aerospace manufacturing.',70,'Seat 18-C, then FBI lab'],
+['butt','Eight Raleigh butts','RECOVERED 1971','Cooper smoked Raleigh filter-tips through the flight. Only a partial DNA profile has ever been developed, and it has matched no one.',55,'Ashtray, then FBI lab'],
+['cash','The ransom','MISSING $200,000','10,000 twenty-dollar bills, mostly “L” series notes from the San Francisco Federal Reserve, microfilmed serial by serial before handover. About 21 lb of cash.',90,'Sea-Tac to Cooper'],
+['print','66 latent prints','UNMATCHED','Dozens of prints were lifted from the cabin. None has been tied to Cooper with certainty, and many belong to crew and passengers.',60,'Cabin, tray, stairs'],
+['chute','Unused parachute','RECOVERED 1971','One rig stayed on the plane with its shroud lines cut, believed used to tie the money bag around his waist. He took the other.',65,'Aft cabin floor'],
+['plate','Airstair placard','FOUND 1978','A deer hunter found the 727’s aft-stair instruction placard near Castle Rock, Washington, a key point for drift models.',75,'Cowlitz County woods'],
+['cash','Tena Bar cash','FOUND 1980','Eight-year-old Brian Ingram found $5,800 (290 bills) on the Columbia riverbank. Serials matched the ransom. The rubber bands had rotted away.',95,'Columbia River bank'],
+['case','Briefcase and “bomb”','NEVER RECOVERED','Cooper showed red cylinders wired to a battery inside a briefcase, then took it with him. Whether it was real is unknown.',20,'Aboard, then vanished']];
+const TL=[
+['Nov 24 1971 · 14:00','The ticket','At Portland International a man in a dark suit pays $20 cash for a one-way seat to Seattle on Flight 305. He gives the name Dan Cooper. A press mix-up with an unrelated suspect later turns it into “D.B.”'],
+['14:50','Wheels up','Boeing 727-51, 36 passengers, six crew. Cooper takes 18-C and orders a bourbon and soda.'],
+['≈15:00','The note','He hands flight attendant Florence Schaffner a folded note. When she ignores it he tells her to read it: he has a bomb. He keeps the note, so its exact wording is lost.'],
+['17:39','Sea-Tac','He gets $200,000 and four parachutes. 36 passengers and two attendants are released. Tina Mucklow stays on as his go-between.'],
+['19:40','Second takeoff','Course for Mexico City via Reno. His orders: 10,000 ft, under 200 knots, flaps at 15°, cabin unpressurized, aft stairs down. Crew confined to the cockpit.'],
+['≈20:13','The jump','A pressure bump is logged as the airstair opens, over southwest Washington in heavy rain, in the dark. Cooper is never seen again.'],
+['23:02','Reno','The 727 lands. Agents board an empty cabin and find the tie, clip, butts and a parachute.'],
+['1972','Copycats and the vane','Richard McCoy hijacks a United 727 and jumps. Boeing and the FAA add the “Cooper vane” so the stair cannot drop in flight.'],
+['1978','Placard found','The 727’s stair instructions turn up in the woods near Castle Rock.'],
+['Feb 10 1980','Tena Bar','A boy finds $5,800 of ransom on the Columbia. Mt. St. Helens erupts three months later, rewriting the landscape.'],
+['Jul 8 2016','File suspended','The FBI ends active investigation after 45 years, asking the public to turn in any physical evidence.'],
+['2017 on','Citizen sleuths','Independent researchers keep digging at tie particles, serial numbers and suspect timelines.']];
+const PIN=[['Portland Intl',232,404,'14:50','Flight 305 departs. Cooper boards as Dan Cooper.'],['Sea-Tac',336,62,'17:39','Ransom and parachutes delivered, passengers released.'],['Primary drop zone',266,322,'≈20:13','The FBI’s search center near Ariel and Lake Merwin, where the pressure bump was logged.'],['Castle Rock',168,262,'1978','Aft-stair placard found by a hunter.'],['Tena Bar',237,386,'1980','$5,800 of ransom found. Geologists tied the deposit to 1974 river dredging, so the cash was in the water by then.'],['Mt. St. Helens',367,285,'May 1980','Erupted three months after the cash find, burying and reshaping the search area.']];
+const SU=[
+['Richard McCoy Jr.','Ex-Green Beret, Utah','CLEARED','Hijacked a United 727 in 1972 with a near-identical plan and was killed by agents in 1974. The FBI cleared him: he was reported home in Utah that Thanksgiving.',38],
+['Kenneth Christiansen','Northwest Orient mechanic, ex-paratrooper','OPEN','Airline insider with jump training and aircraft knowledge. Never cleared, and a long-running favorite of sleuths.',72],
+['Robert Rackstraw','Army paratrooper, helicopter pilot','UNLIKELY','Pursued by amateur investigators for decades. Denies it, and no physical evidence connects him.',45],
+['Duane Weber','Died 1995','UNLIKELY','His wife said he once confessed, “I’m Dan Cooper.” FBI comparison of prints and DNA found no match.',30],
+['Sheridan Peterson','Boeing writer, ex-smokejumper','OPEN','Raised often by citizen sleuths for his Boeing ties and jump background. He never confessed.',60],
+['Barbara Dayton','Veteran, later lived as a woman','UNLIKELY','Claims about a deathbed confession and a paratrooper past remain undocumented.',25]];
+const TH=[['Died on the jump',55,'The FBI’s working view. A night jump in rain, in a suit and loafers, with a rig he hadn’t inspected.','Rotted cash on the river, no sightings, no spending.','He chose a precise exit profile.'],['Skilled survivor',25,'A planner who knew the 727 airstair and picked 10,000 ft and 200 knots.','His specific, informed demands.','Only 290 bills ever surfaced.'],['Inside job',15,'An airline or Boeing insider who knew exactly how the stairs behaved.','Tie particles, aircraft knowledge.','Particle link is unproven.'],['Ground accomplice',5,'A partner waiting below the flight path.','Explains the missing cash.','No evidence at all.']];
+const LD=[['ACTIVE','Test the tie’s titanium and rare-earth particles against aerospace supplier records.'],['COLD','Run the partial DNA and latent prints through genealogy databases.'],['OPEN','Watch for the other 9,710 serial numbers, which are public, in collections and estates.'],['OPEN','Re-survey the Lewis River and Columbia confluence against 1974 dredging history.'],['DEAD','Deathbed confessions: none has been verified.']];
+const TABS=[['brief','Brief'],['tl','Timeline'],['map','Flight map'],['ev','Evidence'],['sch','727 schematic'],['su','Suspects'],['th','Theories']];
+const V={},P={};let tab;
+V.brief=()=>`<div class="pn"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><div><div class="dim">FBI Seattle Field Office · Case NORJAK</div><h1>Skyjack: the man who walked off a 727</h1></div><span class="st">Unsolved</span></div>
+<p>On Thanksgiving eve 1971 a man calling himself <b>Dan Cooper</b> hijacked a Boeing 727 between Portland and Seattle, collected <b>$200,000</b> and four parachutes, and stepped out the aft stairs into a rain-black night. He has never been identified. The FBI worked the case for <span class="rx">45 years</span> and the only proof the money ever landed is <span class="rx">$5,800 found by a child on the Columbia in 1980</span>. Click the black bars to declassify.</p><button class="b" id="dc">Declassify all</button></div>
+<div class="g">${[['$',200000,'ransom'],['',10000,'twenty-dollar bills'],['',36,'passengers freed'],['',66,'latent prints'],['',290,'bills recovered'],['',9710,'bills missing']].map(s=>`<div class="pn"><div class="big" data-n="${s[1]}" data-p="${s[0]}">0</div><div class="dim">${s[2]}</div></div>`).join('')}</div>
+<div class="pn"><h3>Open leads</h3>${LD.map(l=>`<p><span class="chip ${l[0]}">${l[0]}</span>${l[1]}</p>`).join('')}</div>
+<div class="pn dim">Sources: FBI Vault NORJAK files, FBI history page, Geoffrey Gray’s <i>Skyjack</i>, citizen-sleuth research and the YouTube and Buzzfeed Unsolved retellings. Unofficial fan project. Illustrations are original drawings, not photographs. Percentages are illustrative.</div>`;
+P.brief=()=>{$$('.rx').forEach(e=>e.onclick=()=>e.classList.toggle('o'));$('#dc').onclick=()=>$$('.rx').forEach(e=>e.classList.add('o'));$$('[data-n]').forEach(el=>{const n=+el.dataset.n,t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/1300);el.textContent=el.dataset.p+Math.round(n*(1-(1-p)**3)).toLocaleString();p<1&&requestAnimationFrame(f)})(t0)})};
+V.tl=()=>`<div class="pn"><h3>Chronology · tap an entry</h3><p class="dim">Flight 305 to the present</p>${TL.map(t=>`<div class="tl"><i></i><span class="dim">${t[0]}</span><h3>${t[1]}</h3><p>${t[2]}</p></div>`).join('')}</div>`;
+P.tl=()=>{const o=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.3});$$('.tl').forEach(e=>{o.observe(e);e.onclick=()=>e.classList.toggle('o')})};
+V.map=()=>`<div class="pn"><h3>Flight path and search area</h3><div class="mp"><div class="sw"></div><div id="mi2"><svg viewBox="0 0 700 470" width="100%"><defs><pattern id="gr" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M35 0H0V35" fill="none" stroke="var(--ln)"/></pattern><pattern id="hc" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="var(--dim)" stroke-opacity=".4"/></pattern></defs><rect width="700" height="470" fill="url(#gr)"/>
+<path d="M0 0H90Q130 120 90 250 60 330 0 340Z" fill="var(--c2)" opacity=".13"/><path d="M480 0Q530 150 490 300T560 470H700V0Z" fill="url(#hc)"/>
+<path d="M0 330Q120 320 170 360T232 404Q330 420 480 398T700 380" fill="none" stroke="var(--c2)" stroke-width="5" opacity=".5"/><path d="M367 285Q320 290 268 322T180 358" fill="none" stroke="var(--c2)" stroke-width="2" opacity=".5"/>
+<text x="14" y="200">PACIFIC</text><text x="560" y="200">CASCADE RANGE</text><text x="440" y="440">COLUMBIA RIVER</text><text x="300" y="300">LEWIS R.</text>
+<g id="dz"><ellipse cx="262" cy="335" rx="58" ry="40" fill="var(--rd)" fill-opacity=".15" stroke="var(--rd)" stroke-dasharray="4 3"/><text x="195" y="390" style="fill:var(--rd)">SEARCH ZONE</text></g>
+<g id="fl"><path id="fp" d="M336 62C330 150 300 250 266 322S300 440 380 470" fill="none" stroke="var(--ac)" stroke-width="2" stroke-dasharray="6 5"/><path d="M8 0L-5 4-3 0-5-4Z" fill="var(--ac)"><animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#fp"/></animateMotion></path><text x="350" y="450">→ TO RENO</text></g>
+<g id="pn">${PIN.map((p,i)=>`<g class="pin" data-i="${i}" transform="translate(${p[1]} ${p[2]})"><circle class="pr" r="6"/><circle r="9" fill="#0000"/><circle r="4"/><text x="10" y="4">${p[0]}</text></g>`).join('')}</g></svg></div></div>
+<p><label><input type="checkbox" data-g="fl" checked> Flight path</label> <label><input type="checkbox" data-g="dz" checked> Search zone</label> <label><input type="checkbox" data-g="pn" checked> Markers</label> <label>Tilt <input type="range" id="tt" min="0" max="55" value="24"></label></p>
+<div class="pn" id="mi"><span class="dim">Select a marker on the map.</span></div></div>`;
+P.map=()=>{$$('.pin').forEach(p=>p.onclick=()=>{const d=PIN[p.dataset.i];$('#mi').innerHTML=`<h3>${d[0]}</h3><span class="dim">${d[3]}</span><p>${d[4]}</p>`});$$('[data-g]').forEach(c=>c.onchange=()=>$('#'+c.dataset.g).style.display=c.checked?'':'none');$('#tt').oninput=e=>$('#mi2').style.setProperty('--t',e.target.value+'deg')};
+V.ev=()=>`<div class="pn"><h3>Evidence locker · open any item</h3><div class="g">${EV.map((e,i)=>`<div class="ev" data-i="${i}"><div>${ico(e[0],84)}<div class="hd" style="font-size:13px">${e[1]}</div><div class="dim">${e[2]}</div></div></div>`).join('')}</div></div>
+<div class="pn"><h3>The ransom: 10,000 bills</h3><canvas id="rc" width="300" height="300" style="max-width:300px;margin:auto"></canvas><p class="dim">Each dot is one $20 bill. Amber: the 290 ever recovered. The other 9,710 are unaccounted for.</p></div>`;
+P.ev=()=>{$$('.ev').forEach(el=>{const d=el.firstChild;el.onclick=()=>openEv(el.dataset.i);el.onpointermove=e=>{const r=el.getBoundingClientRect();d.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*30+'deg');d.style.setProperty('--rx',-((e.clientY-r.top)/r.height-.5)*30+'deg')};el.onpointerleave=()=>{d.style.setProperty('--ry','0deg');d.style.setProperty('--rx','0deg')}});
+const cv=$('#rc'),c=cv.getContext('2d'),F=new Set();let s=7;while(F.size<290){s=(s*16807)%2147483647;F.add(s%10000)}
+(function f(t){if(!cv.isConnected)return;requestAnimationFrame(f);const k=getComputedStyle(R);c.clearRect(0,0,300,300);for(let i=0;i<10000;i++){const x=i%100*3,y=(i/100|0)*3;if(F.has(i)){c.fillStyle=k.getPropertyValue('--ac');c.fillRect(x-1,y-1,4,4)}else{c.globalAlpha=.2+.25*Math.sin(t/500+x*.06+y*.04);c.fillStyle=k.getPropertyValue('--c2');c.fillRect(x,y,2,2);c.globalAlpha=1}}})(0)};
+function openEv(i){const e=EV[i],m=$('#m');m.innerHTML=`<div class="pn mb"><button class="x">✕ close</button><div class="sp">${ico(e[0],170)}</div><div><span class="st" style="font-size:13px">${e[2]}</span><h2>${e[1]}</h2><p>${e[3]}</p><div class="dim">Evidentiary value</div><div class="bar"><i style="width:${e[4]}%"></i></div><div class="dim">Custody: ${e[5]}</div></div></div>`;m.className='on';m.onclick=ev=>{if(ev.target==m||ev.target.className=='x')m.className=''}}
+V.sch=()=>`<div class="pn"><h3>Boeing 727-51 · N467US · drag to rotate</h3><canvas id="cv"></canvas><p><button class="b on" id="au">Auto-rotate</button> <span id="hb"></span></p><div class="pn" id="hi"></div></div>`;
+P.sch=()=>{const cv=$('#cv'),c=cv.getContext('2d'),L=[],A=[],seg=(a,b,t=L)=>t.push([...a,...b]),poly=(p,t=L)=>p.forEach((q,i)=>seg(q,p[(i+1)%p.length],t)),rad=x=>x>5?.6*Math.sqrt(Math.max(0,1-((x-5)/1.65)**2))+.04:x<-3.5?.6*(1-.75*((-3.5-x)/3.2)**1.5)+.02:.6,N=14,xs=[];
+for(let x=-6.6;x<=6.6;x+=.55)xs.push(x);
+xs.forEach((x,i)=>{const r=rad(x);for(let k=0;k<N;k++){const a=k/N*6.283,b=(k+1)/N*6.283;seg([x,r*Math.cos(a),r*Math.sin(a)],[x,r*Math.cos(b),r*Math.sin(b)]);if(i&&k%2==0){const q=rad(xs[i-1]);seg([xs[i-1],q*Math.cos(a),q*Math.sin(a)],[x,r*Math.cos(a),r*Math.sin(a)])}}});
+for(const s of[1,-1]){poly([[1.8,-.35,.5*s],[-2.4,-.2,5.4*s],[-3.3,-.2,5.4*s],[-1.2,-.35,.5*s]]);for(let t=.2;t<1;t+=.2)seg([1.8-4.2*t,-.35+.15*t,(.5+4.9*t)*s],[-1.2-2.1*t,-.35+.15*t,(.5+4.9*t)*s]);poly([[-6,3.5,0],[-6.7,3.5,1.9*s],[-7.2,3.5,1.9*s],[-6.9,3.5,0]]);
+for(let x=-3.8;x<4.6;x+=.45)seg([x,.2,.565*s],[x+.15,.2,.565*s])}
+poly([[-4.2,.55,0],[-6,3.5,0],[-6.9,3.5,0],[-6.5,.4,0]]);
+const cyl=(x1,x2,y,z,r)=>{for(let k=0;k<8;k++){const a=k/8*6.283,b=(k+1)/8*6.283;seg([x1,y+r*Math.cos(a),z+r*Math.sin(a)],[x2,y+r*Math.cos(a),z+r*Math.sin(a)]);for(const x of[x1,x2])seg([x,y+r*Math.cos(a),z+r*Math.sin(a)],[x,y+r*Math.cos(b),z+r*Math.sin(b)])}};
+cyl(-4.4,-6.2,.35,.85,.28);cyl(-4.4,-6.2,.35,-.85,.28);cyl(-4.2,-6,.95,0,.25);
+poly([[-4.7,-.58,.2],[-5.9,-1.5,.2],[-5.9,-1.5,-.2],[-4.7,-.58,-.2]],A);for(let t=.2;t<1;t+=.2)seg([-4.7-1.2*t,-.58-.92*t,.2],[-4.7-1.2*t,-.58-.92*t,-.2],A);
+const HS=[['Cockpit',[5.6,.15,0],.6,.2,'Captain William Scott, First Officer William Rataczak and Flight Engineer H. E. Anderson stayed up front, door closed, on Cooper’s orders.'],['Seat 18-C',[-2.6,.15,.3],.4,.7,'Cooper’s seat. The tie, clip and eight cigarette butts came from here, along with dozens of prints.'],['Aft airstair',[-5.3,-1,0],2.7,-.2,'The 727’s ventral stair could be lowered in flight, which is why Cooper chose this jet. After 1972 the “Cooper vane” was added so it cannot be.'],['Wing and flaps',[-1,-.3,2.5],-.5,.7,'He ordered flaps at 15° to hold the 727 slow and stable near 200 knots at 10,000 ft.'],['Tri-engine tail',[-5.3,.6,.85],2.4,.25,'Three rear engines, including the S-duct center engine. The tail is the only exit that clears them.']];
+let W,H,yaw=-.6,pit=.25,ty,auto=true,dr,mv=0,sel=2,D=16;const wr=d=>Math.atan2(Math.sin(d),Math.cos(d));
+const pick=i=>{sel=i;ty=[yaw+wr(HS[i][2]-yaw),HS[i][3]];auto=false;$('#au').classList.remove('on');$('#hi').innerHTML=`<h3>${HS[i][0]}</h3><p>${HS[i][4]}</p>`;$$('#hb button').forEach((b,j)=>b.classList.toggle('on',j==i))};
+$('#hb').innerHTML=HS.map((h,i)=>`<button class="b">${h[0]}</button>`).join(' ');$$('#hb button').forEach((b,i)=>b.onclick=()=>pick(i));pick(2);
+$('#au').onclick=e=>{auto=!auto;e.target.classList.toggle('on',auto);ty=null};
+const pr=p=>{const ca=Math.cos(yaw),sa=Math.sin(yaw),cp=Math.cos(pit),sp=Math.sin(pit),x=p[0]*ca+p[2]*sa,z=-p[0]*sa+p[2]*ca,y=p[1]*cp-z*sp,d=p[1]*sp+z*cp,s=W/(D+d)*1.05;return[W/2+x*s,H/2-y*s,d]};
+cv.onpointerdown=e=>{dr=[e.clientX,e.clientY];mv=0;cv.setPointerCapture(e.pointerId);ty=null};
+cv.onpointermove=e=>{if(!dr)return;yaw+=(e.clientX-dr[0])*.008;pit=Math.max(-1.3,Math.min(1.3,pit+(e.clientY-dr[1])*.008));mv+=Math.abs(e.clientX-dr[0])+Math.abs(e.clientY-dr[1]);dr=[e.clientX,e.clientY]};
+cv.onpointerup=e=>{dr=null;if(mv<6){const r=cv.getBoundingClientRect(),k=cv.width/r.width;HS.forEach((h,i)=>{const q=pr(h[1]);if(Math.hypot(q[0]-(e.clientX-r.left)*k,q[1]-(e.clientY-r.top)*k)<24)pick(i)})}};
+(function f(t){if(!cv.isConnected)return;requestAnimationFrame(f);const dp=devicePixelRatio||1,w=cv.clientWidth*dp;if(cv.width!=w){cv.width=w;cv.height=w*.625}W=cv.width;H=cv.height;
+if(auto&&!dr)yaw+=.004;if(ty){yaw+=(ty[0]-yaw)*.08;pit+=(ty[1]-pit)*.08;if(Math.abs(ty[0]-yaw)<.01)ty=null}
+const k=getComputedStyle(R),c2=k.getPropertyValue('--c2'),ac=k.getPropertyValue('--ac'),dm=k.getPropertyValue('--dim');c.clearRect(0,0,W,H);c.lineWidth=dp;
+for(const[arr,col]of[[L,c2],[A,ac]]){c.strokeStyle=col;if(arr==A)c.lineWidth=2*dp;for(const s of arr){const a=pr(s.slice(0,3)),b=pr(s.slice(3));c.globalAlpha=Math.max(.15,Math.min(1,.55-(a[2]+b[2])/2/9));c.beginPath();c.moveTo(a[0],a[1]);c.lineTo(b[0],b[1]);c.stroke()}}
+c.globalAlpha=1;c.font=11*dp+'px monospace';HS.forEach((h,i)=>{const q=pr(h[1]),r=(5+2*Math.sin(t/250))*dp;c.strokeStyle=ac;c.lineWidth=2*dp;c.beginPath();c.arc(q[0],q[1],i==sel?r*1.6:r,0,7);c.stroke();if(i==sel){c.fillStyle=ac;c.fillText(h[0],q[0]+14*dp,q[1]-8*dp)}});
+c.fillStyle=dm;c.fillText('BOEING 727-51  N467US  NW ORIENT 305',12*dp,18*dp);c.fillText('L 133′ 2″   SPAN 108′   TAIL 34′',12*dp,H-12*dp)})(0)};
+V.su=()=>`<div class="pn"><h3>Persons of interest</h3><p class="dim">Match index is an illustrative sleuth-community estimate.</p></div><div class="g" style="grid-template-columns:repeat(auto-fill,minmax(250px,1fr))">${SU.map(s=>`<div class="pn"><span class="chip ${s[2]}">${s[2]}</span><h3>${s[0]}</h3><div class="dim">${s[1]}</div><p>${s[3]}</p><div class="dim">Match index ${s[4]}%</div><div class="bar"><i style="width:${s[4]}%"></i></div></div>`).join('')}</div>`;
+V.th=()=>`<div class="pn"><h3>Theories</h3><p class="dim">Tap one to open. Bars are illustrative sleuth-consensus estimates.</p></div>${TH.map(t=>`<div class="pn th" style="cursor:pointer"><div class="hd">${t[0]} <span class="dim">${t[1]}%</span></div><div class="bar"><i style="width:${t[1]}%"></i></div><div class="d" hidden><p>${t[2]}</p><p><b style="color:var(--c2)">For:</b> ${t[3]}</p><p><b style="color:var(--rd)">Against:</b> ${t[4]}</p></div></div>`).join('')}`;
+P.th=()=>$$('.th').forEach(e=>e.onclick=()=>{const d=$('.d',e);d.hidden=!d.hidden});
+function go(id){tab=id;$$('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.t==id));$('#v').innerHTML=V[id]();P[id]&&P[id]();scrollTo(0,0)}
+$('#nav').innerHTML=TABS.map(t=>`<button data-t="${t[0]}">${t[1]}</button>`).join('');$$('#nav button').forEach(b=>b.onclick=()=>go(b.dataset.t));
+const T0=Date.UTC(1971,10,25,4,13);setInterval(tick,1000);function tick(){let s=Math.floor((Date.now()-T0)/1000),d=Math.floor(s/86400),y=Math.floor(d/365.2425);d=Math.floor(d-y*365.2425);s%=86400;const p=n=>String(n).padStart(2,'0');$('#ck').textContent=`${y}y ${d}d ${p(s/3600|0)}:${p(s/60%60|0)}:${p(s%60)}`}tick();
+const BL=['> ESTABLISHING SECURE LINK ...','> CLEARANCE LEVEL: TS//SCI','> CASE FILE: NORJAK / NW ORIENT 305','> EVIDENCE INDEX LOADED: 8 ITEMS','> 9,710 SERIAL NUMBERS UNACCOUNTED FOR','> SUBJECT STATUS: UNIDENTIFIED'];let bi=0;
+const bt=setInterval(()=>{$('#bt').textContent+=BL[bi++]+'\n';if(bi>=BL.length){clearInterval(bt);$('#en').hidden=false}},380);
+$('#en').onclick=()=>{$('#boot').classList.add('off');go('brief')};go('brief');
+</script></body></html>
